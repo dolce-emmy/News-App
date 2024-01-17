@@ -1,0 +1,16 @@
+@use './partials/variables';
+@use './partials/header';
+@use './partials/navigation';
+@use './partials/home-component';
+@use './partials/theme-component';
+@use './partials/refresh-btn';
+@use './partials/team-container-big';
+@use './partials/team-container-small';
+
+@import url('https://fonts.googleapis.com/css2?family=Arsenal:wght@400;700&family=Poiret+One&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}

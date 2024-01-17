@@ -1,0 +1,56 @@
+.main-big-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .main-heading {
+        text-align: center;
+        padding-bottom: 1rem;
+        font-family: 'Arsenal', sans-serif;
+        font-weight: 700;
+        font-size: 3rem;
+    }
+    .main-grid-container {
+        width: 85vw;
+        display: grid;
+        grid-template-areas:
+            'a0 a0 a1'
+            'a2 a3 a4'
+            'a5 a6 a7';
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 300px);
+        gap: 6rem;
+        margin-bottom: 30px;
+        margin-bottom: 5rem;
+
+        li {
+            // border: 2px solid black;
+            height: 100%;
+            list-style: none;
+            border-radius: 20px;
+            .main-item-link {
+                color: black;
+                text-decoration: none;
+                font-family: 'Arsenal', sans-serif;
+                font-weight: 400;
+
+                h3 {
+                    margin: 0.3rem 1rem;
+                }
+                .main-item-img {
+                    width: 100%;
+                    object-fit: cover;
+                    height: 100%;
+                    border-radius: 20px;
+                }
+                .main-item-title {
+                    font-family: 'Arsenal', sans-serif;
+                }
+            }
+        }
+    }
+    .main-teamSmallerVersion-section {
+        margin: 3.5rem;
+        border-top: solid lightgray 1px;
+        border-bottom: solid lightgray 1px;
+    }
+}

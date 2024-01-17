@@ -1,0 +1,44 @@
+.team-heading {
+    padding-bottom: 6rem;
+    text-align: center;
+    font-family: 'Arsenal', sans-serif;
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+.team-container {
+    display: grid;
+
+    width: 100vw;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 15px;
+    text-align: center;
+    align-content: center;
+    width: 80%;
+    margin: 0 auto;
+    border-bottom: solid lightgray 1px;
+    .team-img {
+        width: 40%;
+        height: 54%;
+        border-radius: 50%;
+        object-fit: cover;
+        object-position: 55% 5%;
+    }
+
+    .team-linkedIn {
+        padding: 0.5rem;
+    }
+
+    .team-github {
+        padding: 0.5rem;
+        
+    }
+
+    .icon {
+        margin: 5px;
+        text-decoration: none;
+        font-size: 20px;
+        
+    }
+}
