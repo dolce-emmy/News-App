@@ -50,7 +50,7 @@ const Sport = () => {
             <ResetSessionStorage setArticles={setArticles} url={URL} />
             <ul className="theme-grid-container">
                 {articles.map((article, index) => {
-                    if (index < 12 && article.description !== null) {
+                    if (index < 16 && article.description !== null && article.title !=='[Removed]') {
                         return (
                             <MainThemePageItem
                                 article={{ ...article, id: uuid() }}

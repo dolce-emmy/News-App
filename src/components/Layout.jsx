@@ -12,7 +12,7 @@ const Layout = () => {
 
                     <img className="header-logo" src="./team-photos/logo.jpeg" alt="" />
                 <div className='header-nav'>
-                    <Link to='' className='header-link'>
+                    <Link to='about' className='header-link'>
                         About
                     </Link>
 

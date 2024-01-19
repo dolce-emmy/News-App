@@ -46,6 +46,11 @@ const Container = ({ children }) => {
         },
     ]);
 
+    const [about, setAbout] = useState([
+        {
+            imageUrl:'./about/camera.jpg',
+        }
+    ])
     // console.log(articles);
     return (
         <MyContext.Provider value={{ team, setTeam }}>

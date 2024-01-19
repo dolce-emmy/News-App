@@ -6,6 +6,7 @@ import Sport from './components/Sport';
 import Container from './contexts/Container';
 import Entertainment from './components/Entertainment';
 import Team from './components/Team';
+import About from './components/About';
 import './styles/App.scss';
 //import './styles/extra.css';
 
@@ -23,8 +24,9 @@ function App() {
                         <Route path="technology" element={<Tech />} />
                         <Route path="sport" element={<Sport />} />
                         <Route path="team" element={<Team />} />
+                        <Route path="about" element={<About />} />
                     </Route>
-                    <Route path="/" element={<Layout />}>
+                    {/* <Route path="/" element={<Layout />}>
                         <Route index element={<Home />} />
                         <Route
                             path="entertainment"
@@ -33,7 +35,7 @@ function App() {
                         <Route path="technology" element={<Tech />} />
                         <Route path="sport" element={<Sport />} />
                         <Route path="team" element={<Team />} />
-                    </Route>
+                    </Route> */}
                 </Routes>
             </div>
         </Container>
