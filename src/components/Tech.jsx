@@ -56,7 +56,7 @@ const Tech = () => {
             </ul>
             <footer />
         </div>
-
+        <Footer />
         
         </>
     );

@@ -57,7 +57,11 @@ const Entertainment = () => {
                         })}
                     </ul>
                 </div>
+                
             </div>
+
+            <Footer />
+            
         </>
     );
 };

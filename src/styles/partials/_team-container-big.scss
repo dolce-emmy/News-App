@@ -17,13 +17,13 @@
     align-content: center;
     width: 80%;
     margin: 0 auto;
-    border-bottom: solid lightgray 1px;
+    // border-bottom: solid lightgray 1px;
     .team-img {
         width: 40%;
-        height: 54%;
+        height: 50%;
         border-radius: 50%;
         object-fit: cover;
-        object-position: 55% 5%;
+        object-position: 55% -3%;
     }
 
     .team-linkedIn {

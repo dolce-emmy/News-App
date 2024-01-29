@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useSpring, animated, config } from "react-spring";
+import Footer from "./Footer";
 
 const About = () => {
   console.log("About");
@@ -26,17 +27,18 @@ const About = () => {
   }, []);
 
   const parallaxLayer1 = useSpring({
-    transform: `translateY(${scrollY * 0.2}px)`,
+    transform: `translateY(${scrollY * 0.1}px)`,
     config: config.slow,
   });
 
   const imageAnimation = useSpring({
-    transform: `translateY(${-scrollY * 0.2}px)`, // Adjust the multiplier for the desired image parallax effect
+    transform: `translateY(${-scrollY * 0.1}px)`, // Adjust the multiplier for the desired image parallax effect
     config: config.slow,
   });
 
   return (
-    <div style={{ margin: "80px" }}>
+    <>
+    <div className="about-main-container">
       {/* Parallax Layers */}
       <animated.div
         className="parallax-layer"
@@ -134,17 +136,41 @@ const About = () => {
         }}
       >
         {/* ... content for the fourth parallax layer */}
+        
       </animated.div>
       <animated.div
         className="animated-container fade-in"
         style={fadeInAnimation}
       >
         <main>{/* ... */}</main>
+
+        
+        
       </animated.div>
 
       
 
     </div>
+
+    <div className="about-footer">
+    
+
+      <animated.div
+        className="animated-container fade-in"
+        style={fadeInAnimation}
+      >
+        <Footer />
+
+        
+        
+      </animated.div>
+      
+    </div>
+
+        
+    </>
+       
+        
 
     
 

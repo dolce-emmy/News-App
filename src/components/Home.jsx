@@ -61,9 +61,11 @@ const Home = () => {
             </section>
 
             
+
+            
         </div>
 
-        
+        <Footer />
 
         </>
     );

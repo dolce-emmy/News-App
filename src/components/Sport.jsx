@@ -62,7 +62,7 @@ const Sport = () => {
             </ul>
             
         </div>
-
+        <Footer />
         
         </>
     );
