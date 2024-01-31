@@ -38,143 +38,138 @@ const About = () => {
 
   return (
     <>
-    <div className="about-main-container">
-      {/* Parallax Layers */}
-      <animated.div
-        className="parallax-layer"
-        style={{
-          ...parallaxLayer1,
-          // backgroundColor: "#ffe6e6",
-        }}
-      >
-        <animated.img
-          src="./about/camera.jpg"
-          alt="man sitting on a chair with a camera"
+      <div className="about-main-container">
+        {/* Parallax Layers */}
+        <animated.div
+          className="animated-container fade-in"
+          style={fadeInAnimation}
+        >
+          <h1 className="about-title">About the Pilot Coder Development Team</h1>
+        </animated.div>
+        <animated.div
+          className="parallax-layer"
           style={{
-            width: "100%",
-            height: "50vh",
-            objectFit: "cover",
-            ...imageAnimation,
+            ...parallaxLayer1,
+            // backgroundColor: "#ffe6e6",
           }}
-        />
-        <section className="about-section01">
-        
-          <h1>About the Pilot Coder Development Team</h1>
-          <h2>Welcome to Pilot Coder</h2>
-          <p>
-            Greetings from the skilled developers at Pilot Coder! Our team is
-            thrilled to introduce you to the inner workings of our news platform,
-            where React expertise and API manipulation converge to deliver a
-            cutting-edge and user-centric experience.
-          </p>
-        
-        </section>
-      </animated.div>
-      <animated.div
-        className="parallax-layer"
-        style={{
-          ...parallaxLayer1,  // Use the same parallaxLayer1 style for the second layer
-          // backgroundColor: "#ffcccc", zIndex: -1
-        }}
-      >
-        <section className="about-section02">
-    <h2>Our Tech Journey</h2>
-    <ul>
-      <li>
-        React at the Helm: The driving force behind Pilot Coder is React, the
-        dynamic JavaScript library that forms the backbone of our user
-        interface. We've harnessed the versatility of React to create an
-        engaging and responsive platform.
-      </li>
-      <li>
-        API Mastery: Data fuels our passion, and we excel in the art of API
-        manipulation. By seamlessly integrating with various APIs, we ensure
-        that Pilot Coder not only delivers the latest news but does so in a
-        structured and efficient manner.
-      </li>
-      <li>
-        Crafting Front-End Excellence: Design matters, and our front-end
-        development prowess shines through in the sleek and intuitive design
-        of Pilot Coder. We believe that a well-designed website enhances the
-        overall user experience
-      </li>
-    </ul>
-  </section>
-  
+        >
+          <animated.img
+            src="./about/camera.jpg"
+            alt="man sitting on a chair with a camera"
+            style={{
+              width: "100%",
+              height: "50vh",
+              objectFit: "cover",
+              ...imageAnimation,
+            }}
+          />
+          <section className="about-section01">
+            <h2>Welcome to Pilot Coder</h2>
+            <p>
+              Greetings from the skilled developers at Pilot Coder! Our team is
+              thrilled to introduce you to the inner workings of our news
+              platform, where React expertise and API manipulation converge to
+              deliver a cutting-edge and user-centric experience.
+            </p>
+          </section>
+        </animated.div>
+        <animated.div
+          className="parallax-layer"
+          style={{
+            ...parallaxLayer1, // Use the same parallaxLayer1 style for the second layer
+            // backgroundColor: "#ffcccc", zIndex: -1
+          }}
+        >
+          <section className="about-section02">
+            <h2>Our Tech Journey</h2>
+            <ul>
+              <li>
+                React at the Helm: The driving force behind Pilot Coder is
+                React, the dynamic JavaScript library that forms the backbone of
+                our user interface. We've harnessed the versatility of React to
+                create an engaging and responsive platform.
+              </li>
+              <li>
+                API Mastery: Data fuels our passion, and we excel in the art of
+                API manipulation. By seamlessly integrating with various APIs,
+                we ensure that Pilot Coder not only delivers the latest news but
+                does so in a structured and efficient manner.
+              </li>
+              <li>
+                Crafting Front-End Excellence: Design matters, and our front-end
+                development prowess shines through in the sleek and intuitive
+                design of Pilot Coder. We believe that a well-designed website
+                enhances the overall user experience
+              </li>
+            </ul>
+          </section>
+        </animated.div>
 
-      </animated.div>
+        <animated.div
+          className="parallax-layer"
+          style={{
+            ...parallaxLayer1, // Use the same parallaxLayer1 style for the third layer
+            // backgroundColor: "#ffb3b3", zIndex: -1
+          }}
+        >
+          <section className="about-section02">
+            <h2>What Sets Pilot Coder Apart</h2>
+            <ul>
+              <li>
+                Innovation in Flight: We are driven by a relentless passion for
+                innovation. The Pilot Coder team explores new technologies and
+                implements cutting-edge solutions, ensuring that our platform
+                remains at the forefront of web development.
+              </li>
+              <li>
+                Collaborative Sky: Collaboration is the wind beneath our wings.
+                Through open communication and shared ideas, we've built a
+                platform that reflects the collective expertise of the Pilot
+                Coder team.
+              </li>
+            </ul>
+          </section>
+        </animated.div>
+        <animated.div
+          className="parallax-layer"
+          style={{
+            ...parallaxLayer1, // Use the same parallaxLayer1 style for the third layer
+            // backgroundColor: "#ffb3b3",
+          }}
+        >
+          {/* ... content for the fourth parallax layer */}
+          <section className="about-section01">
+            <h2>Stay Connected with Pilot Coder</h2>
+            <p>
+              We're not just developers; we're a community of tech enthusiasts.
+              Connect with us, provide feedback, and be part of the
+              conversation. Your input matters as we continue to navigate the
+              skies of web development [link to contact page].
+            </p>
+            <p>
+              Thank you for choosing Pilot Coder. We're proud to showcase our
+              technical prowess in React and API manipulation to bring you a
+              dynamic and innovative news experience.
+            </p>
+          </section>
+        </animated.div>
+        <animated.div
+          className="animated-container fade-in"
+          style={fadeInAnimation}
+        >
+          <main>{/* ... */}</main>
+        </animated.div>
+      </div>
 
-      <animated.div
-        className="parallax-layer"
-        style={{
-          ...parallaxLayer1,  // Use the same parallaxLayer1 style for the third layer
-          // backgroundColor: "#ffb3b3", zIndex: -1
-        }}
-      >
-        <section className="about-section02">
-    <h2>What Sets Pilot Coder Apart</h2>
-    <ul>
-      <li>
-        Innovation in Flight: We are driven by a relentless passion for
-        innovation. The Pilot Coder team explores new technologies and
-        implements cutting-edge solutions, ensuring that our platform remains
-        at the forefront of web development.
-      </li>
-      <li>
-        Collaborative Sky: Collaboration is the wind beneath our wings.
-        Through open communication and shared ideas, we've built a platform
-        that reflects the collective expertise of the Pilot Coder team.
-      </li>
-    </ul>
-  </section>
-      </animated.div>
-      <animated.div
-        className="parallax-layer"
-        style={{
-          ...parallaxLayer1,  // Use the same parallaxLayer1 style for the third layer
-          // backgroundColor: "#ffb3b3",
-        }}
-      >
-        {/* ... content for the fourth parallax layer */}
-        
-      </animated.div>
-      <animated.div
-        className="animated-container fade-in"
-        style={fadeInAnimation}
-      >
-        <main>{/* ... */}</main>
-
-        
-        
-      </animated.div>
-
-      
-
-    </div>
-
-    <div className="about-footer">
-    
-
-      <animated.div
-        className="animated-container fade-in"
-        style={fadeInAnimation}
-      >
-        <Footer />
-
-        
-        
-      </animated.div>
-      
-    </div>
-
-        
+      <div className="about-footer">
+        <animated.div
+          className="animated-container fade-in"
+          style={fadeInAnimation}
+        >
+          <Footer />
+        </animated.div>
+      </div>
     </>
-       
-        
-
-    
-
-    
   );
 };
 
