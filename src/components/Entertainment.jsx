@@ -45,8 +45,8 @@ const Entertainment = () => {
                     <p></p>
                     <ResetSessionStorage setArticles={setArticles} url={URL} />
                     <ul className='theme-grid-container'>
-                        {articles.map((article, index) => {
-                            if (index < 16 && article.description !== null && article.title !== '[Removed]') {
+                        {articles.slice(0, 13).map((article, index) => {
+                            if (article.description !== null && article.title !== '[Removed]') {
                                 return (
                                     <MainThemePageItem
                                         article={{ ...article, id: uuid() }}

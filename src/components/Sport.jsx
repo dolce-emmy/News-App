@@ -24,8 +24,7 @@ const Sport = () => {
             );
             setArticles(originalData);
         } else {
-            axios
-                .get(URL)
+            axios.get(URL)
                 .then((response) => {
                     setArticles(response.data?.articles);
 

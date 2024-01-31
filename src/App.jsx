@@ -8,6 +8,7 @@ import Entertainment from './components/Entertainment';
 import Team from './components/Team';
 import Team2 from './components/Team2';
 import About from './components/About';
+import Contact from './components/Contact';
 import './styles/App.scss';
 //import './styles/extra.css';
 
@@ -26,6 +27,7 @@ function App() {
                         <Route path="sport" element={<Sport />} />
                         <Route path="team" element={<Team2 />} />
                         <Route path="about" element={<About />} />
+                        <Route path="contact" element={<Contact />} />
                     </Route>
                     {/* <Route path="/" element={<Layout />}>
                         <Route index element={<Home />} />
