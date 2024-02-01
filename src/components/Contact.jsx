@@ -35,18 +35,52 @@ const Contact = () => {
   };
 
   return (
-    <form ref={form} onSubmit={sendEmail}>
-      <label>Name</label>
-      <input type="text" name="from_name" />
+    <>
+      <div className="contact-container">
+        <form ref={form} onSubmit={sendEmail} className="contact-form">
+          <h1>Get In Touch</h1>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores
+            dolore consequatur delectus tempora soluta earum quae perferendis id
+            quis, officiis facilis recusandae fugiat magnam aspernatur itaque
+            expedita corrupti. Aspernatur, dolorem.
+          </p>
 
-      <label>Email</label>
-      <input type="email" name="from_email" />
+          <label className="username">Name</label>
+          <input className="username-input" type="text" name="from_name" required placeholder="Please enter your name here..." />
 
+
+          <label className="email">Email</label>
+          <input
+            className="email-input"
+            type="email"
+            name="from_email"
+            placeholder="Please enter your email here..."
+            required
+          />
+
+          <label className="message">Message</label>
+          <textarea
+            className="message-input"
+            name="message"
+            placeholder="Please enter your message here..."
             
-      <label>Message</label>
-      <textarea name="message" />
-      <input type="submit" value="Send" />
-    </form>
+          />
+
+          <input className="submit-button" type="submit" value="Send" />
+        </form>
+
+        <div className="image-container">
+          {/* Add your image component or img tag here */}
+
+          <img
+            style={{ width: "100%" }}
+            src="./contact/contact.jpg"
+            alt="Description"
+          />
+        </div>
+      </div>
+    </>
   );
 };
 
