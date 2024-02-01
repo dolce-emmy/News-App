@@ -100,7 +100,7 @@ h2 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   /* Adjust the gap between columns */
-  grid-template-rows: repeat(7, 50px);
+  grid-template-rows: repeat(10, 50px);
   gap: 1rem;
 
   margin-top: 2rem;
@@ -124,21 +124,26 @@ h2 {
   gap: 1rem;
   width: 80%;
   height: 100%;
-  margin-top: 2rem;
+  margin-top: 6rem;
 }
 
 .contact-form > label {
   padding: 0.5rem;
   font-size: 1rem;
   margin-top: 2rem;
+ 
 }
 
 .username-input {
   padding: 0.5rem;
+  border: 1px solid #cccc;
+  border-radius: 3px;
 }
 
 .email-input {
   padding: 0.5rem;
+  border: 1px solid #cccc;
+  border-radius: 3px;
 }
 
 textarea {
@@ -148,6 +153,8 @@ textarea {
   width: 100%;
   margin-top: 4rem;
   margin-bottom: 1rem;
+  border: 1px solid #cccc;
+  border-radius: 3px;
 }
 
 .submit-button {
@@ -171,4 +178,5 @@ textarea {
 
 .image-container {
   grid-column: 2/-1;
+  margin-top: 1rem;
 }

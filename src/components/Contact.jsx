@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import Footer from "./Footer";
+import contactImage from "/contact/contact.jpg";
 
 const Contact = () => {
   const form = useRef();
@@ -80,7 +81,7 @@ const Contact = () => {
 
           <img
             style={{ width: "100%", borderRadius: " 3px" }}
-            src="./contact/contact.jpg"
+            src={contactImage}
             alt="Description"
           />
         </div>
