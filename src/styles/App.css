@@ -125,6 +125,7 @@ h2 {
   width: 80%;
   height: 100%;
   margin-top: 6rem;
+  
 }
 
 .contact-form > label {
@@ -134,6 +135,9 @@ h2 {
  
 }
 
+input, textarea:focus {
+  outline: none;
+}
 .username-input {
   padding: 0.5rem;
   border: 1px solid #cccc;
@@ -179,4 +183,16 @@ textarea {
 .image-container {
   grid-column: 2/-1;
   margin-top: 1rem;
+}
+
+.submit-button:hover {
+  background-color: black;
+  color: white;
+  transition: all 0.3s ease;
+  /* transform:  scale(1.1); */
+transform: translateY(5px);
+
+
+
+
 }
