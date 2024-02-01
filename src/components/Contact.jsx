@@ -42,11 +42,11 @@ const Contact = () => {
         <form ref={form} onSubmit={sendEmail} className="contact-form">
           <h1>Get In Touch</h1>
           <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores
-            dolore consequatur delectus tempora soluta earum quae perferendis id
-            quis, officiis facilis recusandae fugiat magnam aspernatur itaque
-            expedita corrupti. Aspernatur, dolorem.
+            Have a question, suggestion, or just want to say hello? Drop us an
+            email, and our team of developers will get back to you as soon as possible!
+            For urgent matters or direct communication, feel free to reach out to our development team via LinkedIn. We're here to ensure your experience on our news website is seamless and enjoyable.
           </p>
+          
 
           <label className="username">Name</label>
           <input
@@ -85,7 +85,6 @@ const Contact = () => {
             alt="Description"
           />
         </div>
-        
       </div>
 
       <Footer />
