@@ -1,5 +1,6 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
+import Footer from "./Footer";
 
 const Contact = () => {
   const form = useRef();
@@ -47,8 +48,13 @@ const Contact = () => {
           </p>
 
           <label className="username">Name</label>
-          <input className="username-input" type="text" name="from_name" required placeholder="Please enter your name here..." />
-
+          <input
+            className="username-input"
+            type="text"
+            name="from_name"
+            required
+            placeholder="Please enter your name here..."
+          />
 
           <label className="email">Email</label>
           <input
@@ -64,7 +70,6 @@ const Contact = () => {
             className="message-input"
             name="message"
             placeholder="Please enter your message here..."
-            
           />
 
           <input className="submit-button" type="submit" value="Send" />
@@ -74,12 +79,15 @@ const Contact = () => {
           {/* Add your image component or img tag here */}
 
           <img
-            style={{ width: "100%" }}
+            style={{ width: "100%", borderRadius: " 3px" }}
             src="./contact/contact.jpg"
             alt="Description"
           />
         </div>
+        
       </div>
+
+      <Footer />
     </>
   );
 };
